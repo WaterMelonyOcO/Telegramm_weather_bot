@@ -1,6 +1,4 @@
-from utils import *
-from weatherShow import WeatherShow
-from citysList import citysList
+from template.index import main
+from config import TEMP
 
-a = getMesCom('/addcity moscow', 'addcity')
-print(a)
+main(TEMP)

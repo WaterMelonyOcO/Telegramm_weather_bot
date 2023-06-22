@@ -2,3 +2,4 @@ db.json
 .venv
 __pycache__
 config.py
+test.py

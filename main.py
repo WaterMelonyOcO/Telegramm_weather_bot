@@ -130,7 +130,7 @@ def wr(message: Message):
         bot.send_message(message.chat.id, "такого города нету")
         return
     
-    bot.send_message(message.chat.id, weath.getWeatherData(data[0]))
+    bot.send_message(message.chat.id, weath.getWeather(data[0]))
 #########weather get city
 
 ########weather default
@@ -142,7 +142,7 @@ def wrd(message: Message):
     if ( city == None):
         bot.send_message(message.chat.id, "город 'по умолчанию' не установлен")
         return
-    wr = weath.getWeatherData(city[1])
+    wr = weath.getWeather(city[1])
     bot.send_message(message.chat.id, wr)
 
 
